@@ -1,0 +1,32 @@
+---
+title: "Title"
+author: "Dr. Kim Y. Somfleth"
+abstract: "Description in paper abstract format"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  bookdown::pdf_document2: 
+    template: "template.latex"
+    keep_tex: true
+bibliography: "your_bibliography"
+biblio-style: "hunsrtnat.bst"
+csl: "ieee.csl"
+link-citations: yes
+colorlinks: true
+
+params:
+  chapters: all
+---
+
+```{r include=FALSE, echo=FALSE}
+  knitr::opts_chunk$set(echo=TRUE)
+```
+
+```{r main, child = if(params$chapters == 'all') 'chapters/chapter.Rmd' }
+#Insert into chapters
+#```{r preamble, echo=FALSE}
+#set_parent('../report.Rmd')
+#```
+```
+
+```{r main, child = if(params$chapters != 'all') params$chapters }
+```
