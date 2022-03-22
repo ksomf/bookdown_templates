@@ -85,6 +85,14 @@ $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
 \usepackage{amsmath,amssymb}
+\usepackage{cancel}
+%https://tex.stackexchange.com/questions/70040/text-affected-by-using-txfonts-package
+%\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+%\SetSymbolFont{symbolsC}{bold}{U}{txsyc}{bx}{n}
+\DeclareSymbolFont{symbolsC}{U}{ntxsyc}{m}{n}
+\SetSymbolFont{symbolsC}{bold}{U}{ntxsyc}{b}{n}
+\DeclareMathSymbol{\Perp}{\mathrel}{symbolsC}{121}
+
 \usepackage{tikz-cd}
 \usepackage[section]{placeins}
 $if(fontfamily)$
