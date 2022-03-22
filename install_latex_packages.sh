@@ -1,0 +1,10 @@
+set -x
+
+sudo tlmgr update --self
+sudo tlmgr update --all
+
+#These are the r latex packages normally required/assumed
+sudo tlmgr install a4wide achemso adjustbox ae algorithmicx algorithms ametsoc amscls apacite appendix awesomebox babel-english babel-french bbm-macros beamer biber biblatex bookmark breakurl caption carlisle catoptions ccicons charter chemgreek cite cleveref collectbox colortbl comment courier crop csquotes datetime dblfloatfix doclicense draftwatermark eepic endfloat endnotes enumitem environ epsf epstopdf eso-pic esvect etex-pkg eurosym everysel expex extsizes fancyhdr floatflt floatrow fmtcount fontawesome5 fontaxes footmisc forarray hardwrap hyperxmp hyphen-french hyphenat jknapltx koma-script langsci lastpage lettrine libertine lineno lipsum listings logreq ltxkeys ly1 makecell marginnote marvosym mathalpha mathpazo mathspec mathtools mdframed memoir metalogo mhchem microtype minifp mnras modes morefloats moreverb ms multirow mweights ncntrsbk needspace newfloat newtx ntgclass palatino parskip pbox pdflscape pdfpages pdfsync pgf picinpar polyglossia preprint preview psfrag ragged2e realscripts revtex4-1 roboto rsfs sectsty seqsplit setspace sidecap siunitx soul soulutf8 srcltx standalone stix stmaryrd sttools subfig subfigure symbol tabto-ltx tabu tcolorbox tex-gyre textcase thmtools threeparttable threeparttablex thumbpdf titlesec totcount totpages translator trimspaces tufte-latex ucs ulem units upquote urlbst varwidth vmargin vruler wallpaper wrapfig xargs xltxtra xstring xwatermark xypic zapfchan zref 
+
+#My packages
+sudo tlmgr install lato fontaxes subfiles booktabs glossaries mfirstuc xfor datatool substr xstring tcolorbox environ trimspaces keycommand hang enumitem times rsfs pgfopts fdsymbol ifetex anyfontsize cm-super xpatch framed titling hypernat bookman gobble auto-pst-pdf ifplatform pst-pdf luatex85 pstricks preview standalone pst-tools multirow simpler-wick hyphenat isodate imakeidx glossaries-extra placeins lipsum textpos latexmk beamerposter raleway type1cm pgfplots fileinfo tikz-cd MnSymbol
