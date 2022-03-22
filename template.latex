@@ -85,6 +85,7 @@ $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
 \usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
 \usepackage[section]{placeins}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
@@ -230,7 +231,6 @@ $endif$
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{subfig}
-\usepackage{tikz-cd}
 
 %\definecolor{tblue}{HTML}{4e79a7}
 %\definecolor{torange}{HTML}{f28e2b}
